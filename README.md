@@ -1,17 +1,23 @@
 # Чтобы запустить проект нужно:
 
-## npm install
+``` npm install ```
 
-# Запустить сервер: 
+## Запустить сервер: 
 
-## cd server
+``` cd server ```
 
-## npm run dev
+##
 
-# Запустить клиент: 
+``` npm run dev ```
 
-## cd ./
+## Запустить клиент: 
 
-## cd client
+``` cd ./ ```
 
-## npm run serve
+## 
+
+``` cd client ```
+
+##
+
+``` npm run serve ```
