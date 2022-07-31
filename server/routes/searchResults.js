@@ -14,6 +14,18 @@ router.get('/:query', async (req, res) => {
     const results = await axios(
       `https://api.mapbox.com/geocoding/v5/mapbox.places/${query}.json?${params}`
     )
+
+    results.data.features.forEach((item) => {
+      item.context.forEach((type) => {
+        if (type.id.includes('place')) {
+          item.city = item.text
+        }
+        if (type.id.includes('region')) {
+          item.state = item.text
+        }
+      })
+    })
+
     const data = results.data
     res.status(200).json(data)
   } catch (err) {
