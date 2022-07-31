@@ -1,24 +1,17 @@
-# client
+# Чтобы запустить проект нужно:
 
-## Project setup
-```
-npm install
-```
+## npm install
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Запустить сервер: 
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## cd server
 
-### Lints and fixes files
-```
-npm run lint
-```
+## npm run dev
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Запустить клиент: 
+
+## cd ./
+
+## cd client
+
+## npm run serve
